@@ -81,7 +81,7 @@ span.swatch {
 }
 #key ul li {
   line-height: 1.5em;
-  font-size: .8em;
+  font-size: 14px;
   color: #B6B6B6;
 }
 
@@ -167,9 +167,10 @@ span.swatch {
 [class^="element-"] .face.front i {
   display: block;
   font-size: .8em;
+  font-style: normal;
 }
 [class^="element-"] .face.front strong {
-  font-size: 2.2em;
+  font-size: 1.9em;
   display: block;
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -452,14 +453,15 @@ span.swatch.element-noble-gas {
 /* -------------------
 	Media Queries
 -------------------- */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1269px) {
   #periodni {
-    width: 90%;
+    width: 100%;
+    margin: auto;
   }
   #periodni .element-blank {
     display: none;
   }
-
+  #periodni +p{clear: both;}
   #key {
     position: static;
     width: 100%;
@@ -479,7 +481,7 @@ span.swatch.element-noble-gas {
   }
   #key ul {
     width: 28%;
-    min-width: 150px;
+    min-width: 200px;
     margin-right: 5%;
   }
   #key ul:nth-of-type(3) {
